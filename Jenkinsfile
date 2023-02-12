@@ -27,7 +27,8 @@ pipeline {
                          sh 'mvn verify -DskipTests'
                 }  
             }  
-            stage ('Install') {  
+            
+        stage ('Install') {  
                 steps {  
                          sh 'mvn install -DskipTests'
                 }  
